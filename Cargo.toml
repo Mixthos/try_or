@@ -1,0 +1,11 @@
+[package]
+name = "try_or"
+version = "0.1.0"
+authors = ["Georg Echterling <georg@echterling.de>"]
+
+description = "Contains the macros `try_or!` and `try_or_else!`, which are to `try!` what `unwrap_or` and `unwrap_or_else` are to `unwrap()`."
+readme = "README.md"
+license = "MIT"
+
+documentation = "http://mixthos.github.com/try_or"
+repository = "https://github.com/Mixthos/try_or"

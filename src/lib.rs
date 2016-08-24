@@ -16,7 +16,6 @@ macro_rules! try_or {
 	}}
 }
 
-
 /// Unwraps a `Result`. If the result is `Err`, calls the function `$or_fn` with
 /// its value and returns early with its result.
 #[macro_export]

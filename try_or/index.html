@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `try_or` crate.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, try_or">
+
+    <title>try_or - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'></p><script>window.sidebarCurrent = {name: 'try_or', ty: 'mod', relpath: '../'};</script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Crate <a class='mod' href=''>try_or</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-0' class='srclink' href='../src/try_or/src/lib.rs.html#1-92' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>Contains the macros <code>try_or!</code>, <code>try_or_else!</code>, <code>try_opt_or!</code> and
+<code>try_opt_or_else!</code>. These are helper macros for unwrapping a <code>Result</code> or an
+<code>Option</code> while returning early for <code>Err</code> and <code>None</code> values. The semantics
+are similar to <code>unwrap_or</code> and <code>unwrap_or_else</code>.</p>
+
+<p>If you want a <code>try_opt!</code> macro, there&#39;s already another crate (<code>try_opt</code>)
+for that.</p>
+</div><h2 id='macros' class='section-header'><a href="#macros">Macros</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='macro' href='macro.try_opt_or.html'
+                                  title='try_or::try_opt_or'>try_opt_or</a></td>
+                           <td class='docblock short'>
+                                <p>Unwraps an <code>Option</code>, returning the second parameter if the option is <code>None</code>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='macro' href='macro.try_opt_or_else.html'
+                                  title='try_or::try_opt_or_else'>try_opt_or_else</a></td>
+                           <td class='docblock short'>
+                                <p>Unwraps an <code>Option</code>. If the result is <code>None</code>, calls the function <code>$or_fn</code>
+and returns its result.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='macro' href='macro.try_or.html'
+                                  title='try_or::try_or'>try_or</a></td>
+                           <td class='docblock short'>
+                                <p>Helper macro for unwrapping <code>Result</code> values. Returns early with the value
+of the second parameter if the first parameter is <code>Err</code>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='macro' href='macro.try_or_else.html'
+                                  title='try_or::try_or_else'>try_or_else</a></td>
+                           <td class='docblock short'>
+                                <p>Unwraps a <code>Result</code>. If the result is <code>Err</code>, calls the function <code>$or_fn</code> with
+its value and returns early with its result.</p>
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "try_or";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script defer src="../search-index.js"></script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-# Self-Ref [![Build Status](https://travis-ci.org/Mixthos/try_or.svg?branch=master)](https://travis-ci.org/Mixthos/try_or)
+# try_or [![Build Status](https://travis-ci.org/Mixthos/try_or.svg?branch=master)](https://travis-ci.org/Mixthos/try_or)
 
 Contains the macros `try_or!`, `try_or_else!`, `try_opt_or!` and
 `try_opt_or_else!`. These are helper macros for unwrapping a `Result` or an

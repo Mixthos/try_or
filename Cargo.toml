@@ -1,6 +1,6 @@
 [package]
 name = "try_or"
-version = "0.1.1"
+version = "0.2.0"
 authors = ["Georg Echterling <georg@echterling.de>"]
 
 description = "Contains helper macros for unwrapping Results and Options."
